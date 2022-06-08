@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="dist/reset.css" />
     <link rel="stylesheet" href="dist/reveal.css" />
-    <link rel="stylesheet" href="dist/theme/moon.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
 
     <!-- Theme used for syntax highlighted code -->
     <link rel="stylesheet" href="plugin/highlight/monokai.css" />
@@ -28,7 +28,7 @@
               <li>
                 <h2>Essential Knowledge</h2>
                 <ul>
-                  <li>APIs and Web APIs</li>
+                  <li>APIs and REST APIs</li>
                   <li>HTTP Methods and Status Codes</li>
                 </ul>
               </li>
@@ -42,25 +42,30 @@
             </ul>
           </section>
         </section>
-      </div>
-      <div class="slides">
         <section data-background="backgrounds/ColoredShapes2.svg">
           <h1>Essential Knowledge 📚</h1>
         </section>
-      </div>
-      <div class="slides">
         <section>
           <section data-background="backgrounds/ColoredShapes3.svg">
-            <h1>APIs and Web APIs ⚙</h1>
+            <h1>APIs ⚙</h1>
           </section>
+
           <section data-background="backgrounds/ColoredShapes9.svg">
             <h2>What is an API?</h2>
             <ul>
               <li>API stands for Application Programming Interface.</li>
+              <li>APIs form the foundation of IOT, Mobile Apps and Cloud.</li>
               <li>
-                APIs provide a simple interface (set of available methods) to
-                perform complicated tasks.
+                APIs provide a simple interface (set of available methods) that
+                allow other software applications to perform complex tasks.
               </li>
+            </ul>
+          </section>
+
+          <section data-background="backgrounds/ColoredShapes10.svg">
+            <h2>Why do we need APIs?</h2>
+            <ul>
+              <li>They provide a simple interface for other applications.</li>
               <li>
                 They make it easy for developers to use advanced and complex
                 functionality.
@@ -69,19 +74,96 @@
                 Examples:
                 <ul>
                   <li>
-                    NVidia CUDA allows developers to run Python code on GPUs(for
-                    AI, Blockchain ...).
+                    NVidia CUDA allows Python applications to run Python code on
+                    GPUs(for AI, Blockchain ...).
                   </li>
-                  <li></li>
+                  <li>
+                    Psycopg2 allows Python applications to run SQL queries on
+                    PostGreSQL.
+                  </li>
+                  <li>
+                    Web browsers can get the GPS location of a device via a
+                    Geolocation API.
+                  </li>
                 </ul>
               </li>
             </ul>
           </section>
-          <section data-background="backgrounds/ColoredShapes10.svg">
-            <h2>Why do we need APIs?</h2>
+        </section>
+
+        <section>
+          <section data-background="backgrounds/ColoredShapes11.svg">
+            <h1>REST APIs ⚙</h1>
           </section>
           <section data-background="backgrounds/ColoredShapes11.svg">
-            Types of APIs
+            <h2>REST APIs</h2>
+            <ul>
+              <li>
+                An architectural style and guideline that applies to web based
+                APIs.
+              </li>
+              <li>Roy Fielding defined REST in a PHd dissertation in 2000.</li>
+              <li>
+                APIs that fulifill the REST constraints are called RESTful APIs.
+              </li>
+              <li>
+                REST APIs are typically based on HTTP Protocol and HTTP Methods
+                such as GET, POST, DELETE.
+              </li>
+              <li>
+                Their output can be JSON, XML, HTML or BLOB (Binary Large
+                Object).
+                <ul>
+                  <li>The typical format in modern REST APIs is JSON.</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section data-background="backgrounds/ColoredShapes12.svg">
+            <h2>REST APIs</h2>
+            <ul>
+              <li>
+                Creating a REST API creating an API involves abstracting away
+                the underlying implementation details (DBMS, Database Structure
+                ...) and presenting an easy to use interface to the client
+                application.
+              </li>
+              <li>
+                A REST API is fairly small server-side application, sometimes
+                implemented as a micro-service.
+              </li>
+              <li>
+                Clients access resources using URIs and send and receive data
+                using a specified format.
+              </li>
+            </ul>
+          </section>
+          <section data-background="backgrounds/ColoredShapes13.svg">
+            <h2>Architectural Constraints</h2>
+            <ul>
+              <li>
+                Client-Server Architecture: REST Architecture enforces a
+                Client-server architecture thereby enforcing separation of
+                concerns between user interface(frontend) and backend.
+              </li>
+              <li>
+                Statelessness: REST Architecture is stateless (it keeps no
+                session information), thereby enabling applications to scale by
+                eliminating the overhead of maitaining sessions. This also means
+                you can load balance requests between many servers.
+              </li>
+            </ul>
+          </section>
+          <section data-background="backgrounds/ColoredShapes14.svg">
+            <h2>Architectural Constraints</h2>
+            <ul>
+              <li>
+                Cacheability: As a result of the Stateless nature of the REST
+                Architecture Responses can be Cached; another property that
+                enables scalability.
+              </li>
+              <li></li>
+            </ul>
           </section>
         </section>
 
