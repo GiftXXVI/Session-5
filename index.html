@@ -148,9 +148,9 @@
               </li>
               <li>
                 Statelessness: REST Architecture is stateless (it keeps no
-                session information), thereby enabling applications to scale by
-                eliminating the overhead of maitaining sessions. This also means
-                you can load balance requests between many servers.
+                session information, each request is processed in isolation),
+                thereby eliminating the overhead of maitaining sessions. This
+                also means you can load balance requests between many servers.
               </li>
             </ul>
           </section>
@@ -160,18 +160,83 @@
               <li>
                 Cacheability: As a result of the Stateless nature of the REST
                 Architecture Responses can be Cached; another property that
-                enables scalability.
+                supports scalability.
               </li>
-              <li></li>
+              <li>
+                Layered: The application architecture is supposed to be layered
+                such that Caching can be done at multiple layers between the
+                server and the client.
+              </li>
+            </ul>
+          </section>
+          <section data-background="backgrounds/ColoredShapes15.svg">
+            <h2>Architectural Constraints</h2>
+            <ul>
+              <li>
+                Uniform interface:
+                <ul>
+                  <li>Individual Objects should be identifiable via a URI.</li>
+                  <li>
+                    If a client holds the information of an Object, it should be
+                    able to modify or delete the Object.
+                  </li>
+                  <li>
+                    Responses must include enough information to process the
+                    Response (for example: Content-Type Header).
+                  </li>
+                  <li>
+                    *** If a client accesses the base URL, the client should be
+                    able to discover all available objects that it needs.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section data-background="backgrounds/ColoredShapes15.svg">
+            <h2>Architectural Constraints</h2>
+            <ul>
+              <li>
+                *** Code on demand: Client should be able to download some
+                executable code from the server to extend functionality.
+              </li>
+            </ul>
+          </section>
+          <section data-background="backgrounds/ColoredShapes16.svg">
+            <h2>Why do we need REST APIs?</h2>
+            <ul>
+              <li>
+                They allow us to develop scalable APIs from micro-services.
+              </li>
+              <li>
+                This ties in to our goal to create applications that will scale.
+              </li>
             </ul>
           </section>
         </section>
-
-        <section data-background="backgrounds/ColoredShapes4.svg">
-          <h1>HTTP Methods 📨</h1>
+        <section>
+          <section data-background="backgrounds/ColoredShapes4.svg">
+            <h1>HTTP Methods 📨</h1>
+          </section>
+          <section data-background="backgrounds/ColoredShapes18.svg">
+            <h2>GET</h2>
+          </section>
+          <section data-background="backgrounds/ColoredShapes19.svg">
+            <h2>POST</h2>
+          </section>
+          <section data-background="backgrounds/ColoredShapes20.svg">
+            <h2>PUT</h2>
+          </section>
+          <section data-background="backgrounds/ColoredShapes21.svg">
+            <h2>PATCH</h2>
+          </section>
+          <section data-background="backgrounds/ColoredShapes22.svg">
+            <h2>OPTIONS</h2>
+          </section>
         </section>
-        <section data-background="backgrounds/ColoredShapes5.svg">
-          <h1>HTTP Status Codes 🚦</h1>
+        <section>
+          <section data-background="backgrounds/ColoredShapes5.svg">
+            <h1>HTTP Status Codes 🚦</h1>
+          </section>
         </section>
         <section>
           <section data-background="backgrounds/ColoredShapes6.svg">
