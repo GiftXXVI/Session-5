@@ -314,20 +314,105 @@
         <section data-background="backgrounds/ColoredShapes5.svg">
           <h1>Status Codes 🚦</h1>
         </section>
-        <section>
-          <h2>informational Responses</h2>
-        </section>
-        <section>
+        <section data-background="backgrounds/ColoredShapes32.svg">
           <h2>Success Responses</h2>
+          <table class="table text-white">
+            <thead>
+              <tr>
+                <th>Code</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>200</td>
+                <td>The request succeeded.</td>
+              </tr>
+              <tr>
+                <td>201</td>
+                <td>The request succeeded, and a new resource was created as a result.</td>
+              </tr>
+              <tr>
+                <td>202</td>
+                <td>The request has been received but not yet acted upon. In this case, there will never be a final
+                  result code.</td>
+              </tr>
+            </tbody>
+          </table>
         </section>
-        <section>
+        <section data-background="backgrounds/ColoredShapes33.svg">
           <h2>Redirection Responses</h2>
+          <table class="table text-white">
+            <thead>
+              <tr>
+                <th>Code</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>301</td>
+                <td>The URL of the requested resource has been changed permanently. The new URL is given in the
+                  response.</td>
+              </tr>
+              <tr>
+                <td>304</td>
+                <td>This is used for caching purposes. It tells the client that the resource has not been modified thus
+                  it can use a cached version.</td>
+              </tr>
+            </tbody>
+          </table>
         </section>
-        <section>
+        <section data-background="backgrounds/ColoredShapes34.svg">
           <h2>Client Error Responses</h2>
+          <table class="table text-white">
+            <thead>
+              <tr>
+                <th>Code</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>400</td>
+                <td>The server detected a malformed request syntax, invalid request message framing...</td>
+              </tr>
+              <tr>
+                <td>401</td>
+                <td>The client must authenticate itself first to get the requested response.</td>
+              </tr>
+              <tr>
+                <td>403</td>
+                <td>The client does not have access rights to the content.</td>
+              </tr>
+              <tr>
+                <td>404</td>
+                <td>The server can not find the requested resource.</td>
+              </tr>
+            </tbody>
+          </table>
         </section>
-        <section>
+        <section data-background="backgrounds/ColoredShapes35.svg">
           <h2>Server Error Responses</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Code</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>500</td>
+                <td>The server has encountered a situation it does not know how to handle.</td>
+              </tr>
+              <tr>
+                <td>503</td>
+                <td>The server is not ready to handle the request. Common causes are a server that is down for
+                  maintenance or that is overloaded.</td>
+              </tr>
+            </tbody>
+          </table>
         </section>
       </section>
       <section>
