@@ -20,6 +20,12 @@
 <body>
   <div class="reveal">
     <div class="slides">
+      <section data-background="backgrounds/ColoredShapes38.svg">
+        <h2>💻</h2>
+        <h1 class="h1">Full Stack Web Developer Nanodegree</h1>
+        <h3 class="h3">Session 5</h3>
+        <h2>⌨</h2>
+      </section>
       <section data-background="backgrounds/ColoredShapes24.svg">
         <h1>General Discussion 🎤</h1>
       </section>
@@ -29,55 +35,83 @@
           <h1>Quiz 📝</h1>
         </section>
         <section data-background="backgrounds/ColoredShapes26.svg">
-          <p>Which of the following is (are) the correct method(s) to get a list of results:
-          <ol>
-            <li>User.query.filter_by(username=’Alex’).first()</li>
-            <li>User.query.filter_by(username=’Alex’).all()</li>
-            <li>User.query.filter_by(username=’Alex’).one()</li>
-            <li>User.query.filter_by(username=’Alex’).slice(0,10).all()</li>
-          </ol>
-          </p>
+          <div class="card bg-transparent">
+            <div class="card-body">
+              <h4 class="card-title text-white">Which of the following is (are) the correct method(s) to get a list of
+                results:
+              </h4>
+              <p class="card-text">
+              <ol class="small text-white">
+                <li>User.query.filter_by(username=’Alex’).first()</li>
+                <li>User.query.filter_by(username=’Alex’).all()</li>
+                <li>User.query.filter_by(username=’Alex’).one()</li>
+                <li>User.query.filter_by(username=’Alex’).slice(0,10).all()</li>
+              </ol>
+              </p>
+            </div>
+          </div>
         </section>
         <section data-background="backgrounds/ColoredShapes27.svg">
-          <p>Which of the following is (are) the correct method(s) to get a list with paging (page by page):
-          <ol>
-            <li>User.query.filter_by(username=’Alex’).limit(5).offset(5).all()</li>
-            <li>User.query.filter_by(username=’Alex’).slice(0,5).all()</li>
-            <li>User.query.filter_by(username=’Alex’).all()[0:5]</li>
-            <li>User.query.filter_by(username=’Alex’).limit(10).all() </li>
-            <li>User.query.filter_by(username=’Alex’).paginate(1,5).all() </li>
-          </ol>
-          </p>
+          <div class="card bg-transparent">
+            <div class="card-body">
+              <h4 class="card-title text-white">Which of the following is (are) the correct method(s) to get a list with
+                paging (page by page):
+              </h4>
+              <p class="card-text">
+              <ol class="small text-white">
+                <li>User.query.filter_by(username=’Alex’).limit(5).offset(5).all()</li>
+                <li>User.query.filter_by(username=’Alex’).slice(0,5).all()</li>
+                <li>User.query.filter_by(username=’Alex’).all()[0:5]</li>
+                <li>User.query.filter_by(username=’Alex’).limit(10).all() </li>
+                <li>User.query.filter_by(username=’Alex’).paginate(1,5).all() </li>
+              </ol>
+              </p>
+            </div>
+          </div>
         </section>
         <section data-background="backgrounds/ColoredShapes28.svg">
-          <p>Which of these statements correctly describe what happens after controller receives a request:
-          <ol>
-            <li>The controller passes data to the view to be displayed.</li>
-            <li>The controller saves input data to the database via the view.</li>
-            <li>The controller retrieves data from the database via the model.</li>
-            <li>The controller passes data to the model to be displayed.</li>
-          </ol>
-          </p>
+          <div class="card bg-transparent">
+            <div class="card-body">
+              <h4 class="card-title text-white">After controller receives a request, it:
+              </h4>
+              <p class="card-text">
+              <ol class="small text-white">
+                <li>passes data to the view to be displayed.</li>
+                <li>saves input data to the database via the view.</li>
+                <li>retrieves data from the database via the model.</li>
+                <li>passes data to the model to be displayed.</li>
+              </ol>
+              </p>
+            </div>
+          </div>
         </section>
         <section data-background="backgrounds/ColoredShapes29.svg">
-          <p>In Flask, which of the following functions load a view:
-          <ol>
-            <li>The jsonify() function</li>
-            <li>The render_template() function</li>
-            <li>The @app.route() function</li>
-            <li>The url_for() function</li>
-          </ol>
-          </p>
+          <div class="card-body">
+            <h4 class="card-title text-white">Which of the following functions load a view:
+            </h4>
+            <p class="card-text">
+            <ol class="small text-white">
+              <li>The jsonify() function</li>
+              <li>The render_template() function</li>
+              <li>The @app.route() function</li>
+              <li>The url_for() function</li>
+            </ol>
+            </p>
+          </div>
         </section>
         <section data-background="backgrounds/ColoredShapes30.svg">
-          <p>What is the name of the object used for AJAX request?
-          <ol>
-            <li>HttpRequest</li>
-            <li>xmlRequest</li>
-            <li>XMLHTTPReqeust</li>
-            <li>Request</li>
-          </ol>
-          </p>
+          <div class="card-body">
+            <h4 class="card-title text-white">What is the name of the object used for AJAX request?
+            </h4>
+            <p class="card-text">
+            <ol class="small text-white">
+              <li>HttpRequest</li>
+              <li>xmlRequest</li>
+              <li>XMLHTTPReqeust</li>
+              <li>Request</li>
+            </ol>
+            </p>
+          </div>
         </section>
       </section>
       <section data-background="backgrounds/ColoredShapes23.svg">
@@ -139,22 +173,22 @@
               They make it easy for developers to use advanced and complex
               functionality.
             </li>
+          </ul>
+        </section>
+        <section data-background="backgrounds/ColoredShapes36.svg">
+          <h2>Examples:</h2>
+          <ul>
             <li>
-              Examples:
-              <ul>
-                <li>
-                  NVidia CUDA allows Python applications to run Python code on
-                  GPUs(for AI, Blockchain ...).
-                </li>
-                <li>
-                  Psycopg2 allows Python applications to run SQL queries on
-                  PostGreSQL.
-                </li>
-                <li>
-                  Web browsers can get the GPS location of a device via a
-                  Geolocation API.
-                </li>
-              </ul>
+              NVidia CUDA allows Python applications to run Python code on
+              GPUs(for AI, Blockchain ...).
+            </li>
+            <li>
+              Psycopg2 allows Python applications to run SQL queries on
+              PostGreSQL.
+            </li>
+            <li>
+              Web pages can get the GPS location of a device from the browser via a
+              Geolocation API.
             </li>
           </ul>
         </section>
@@ -175,6 +209,11 @@
             <li>
               APIs that fulifill the REST constraints are called RESTful APIs.
             </li>
+          </ul>
+        </section>
+        <section data-background="backgrounds/ColoredShapes37.svg">
+          <sectio>
+            <h2>REST APIs(Continued)</h2>
             <li>
               REST APIs are typically based on HTTP Protocol and HTTP Methods
               such as GET, POST, DELETE.
@@ -186,10 +225,10 @@
                 <li>The typical format in modern REST APIs is JSON.</li>
               </ul>
             </li>
-          </ul>
+          </sectio>
         </section>
         <section data-background="backgrounds/ColoredShapes12.svg">
-          <h2>REST APIs</h2>
+          <h2>REST APIs(Continued)</h2>
           <ul>
             <li>
               Creating a REST API creating an API involves abstracting away
