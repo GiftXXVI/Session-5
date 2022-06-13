@@ -1,492 +1,128 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>reveal.js</title>
 
-  <title>reveal.js</title>
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/moon.css" />
 
-  <link rel="stylesheet" href="dist/reset.css" />
-  <link rel="stylesheet" href="dist/reveal.css" />
-  <link rel="stylesheet" href="dist/theme/black.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
-  <!-- Theme used for syntax highlighted code -->
-  <link rel="stylesheet" href="plugin/highlight/monokai.css" />
-</head>
-
-<body>
-  <div class="reveal">
-    <div class="slides">
-      <section data-background="backgrounds/ColoredShapes38.svg">
-        <h2>💻</h2>
-        <h1 class="h1">Full Stack Web Developer Nanodegree</h1>
-        <h3 class="h3">Session 5</h3>
-        <h2>⌨</h2>
-      </section>
-      <section data-background="backgrounds/ColoredShapes24.svg">
-        <h1>General Discussion 🎤</h1>
-      </section>
-
-      <section>
-        <section data-background="backgrounds/ColoredShapes25.svg">
-          <h1>Quiz 📝</h1>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <section data-background="backgrounds/ColoredShapes0.svg">
+            <h1>Contents📃</h1>
+          </section>
+          <section data-background="backgrounds/ColoredShapes1.svg">
+            <ul>
+              <li>
+                <h2>Essential Knowledge</h2>
+                <ul>
+                  <li>APIs and Web APIs</li>
+                  <li>HTTP Methods and Status Codes</li>
+                </ul>
+              </li>
+              <li>
+                <h2>Admission</h2>
+                <ul>
+                  <li>Building Endpoints in Flask</li>
+                  <li>Connecting a Client Application</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
         </section>
-        <section data-background="backgrounds/ColoredShapes26.svg">
-          <div class="card bg-transparent">
-            <div class="card-body">
-              <h4 class="card-title text-white">Which of the following is (are) the correct method(s) to get a list of
-                results:
-              </h4>
-              <p class="card-text">
-              <ol class="small text-white">
-                <li>User.query.filter_by(username=’Alex’).first()</li>
-                <li>User.query.filter_by(username=’Alex’).all()</li>
-                <li>User.query.filter_by(username=’Alex’).one()</li>
-                <li>User.query.filter_by(username=’Alex’).slice(0,10).all()</li>
-              </ol>
-              </p>
-            </div>
-          </div>
+      </div>
+      <div class="slides">
+        <section data-background="backgrounds/ColoredShapes2.svg">
+          <h1>Essential Knowledge 📚</h1>
         </section>
-        <section data-background="backgrounds/ColoredShapes27.svg">
-          <div class="card bg-transparent">
-            <div class="card-body">
-              <h4 class="card-title text-white">Which of the following is (are) the correct method(s) to get a list with
-                paging (page by page):
-              </h4>
-              <p class="card-text">
-              <ol class="small text-white">
-                <li>User.query.filter_by(username=’Alex’).limit(5).offset(5).all()</li>
-                <li>User.query.filter_by(username=’Alex’).slice(0,5).all()</li>
-                <li>User.query.filter_by(username=’Alex’).all()[0:5]</li>
-                <li>User.query.filter_by(username=’Alex’).limit(10).all() </li>
-                <li>User.query.filter_by(username=’Alex’).paginate(1,5).all() </li>
-              </ol>
-              </p>
-            </div>
-          </div>
-        </section>
-        <section data-background="backgrounds/ColoredShapes28.svg">
-          <div class="card bg-transparent">
-            <div class="card-body">
-              <h4 class="card-title text-white">After controller receives a request, it:
-              </h4>
-              <p class="card-text">
-              <ol class="small text-white">
-                <li>passes data to the view to be displayed.</li>
-                <li>saves input data to the database via the view.</li>
-                <li>retrieves data from the database via the model.</li>
-                <li>passes data to the model to be displayed.</li>
-              </ol>
-              </p>
-            </div>
-          </div>
-        </section>
-        <section data-background="backgrounds/ColoredShapes29.svg">
-          <div class="card-body">
-            <h4 class="card-title text-white">Which of the following functions load a view:
-            </h4>
-            <p class="card-text">
-            <ol class="small text-white">
-              <li>The jsonify() function</li>
-              <li>The render_template() function</li>
-              <li>The @app.route() function</li>
-              <li>The url_for() function</li>
-            </ol>
-            </p>
-          </div>
-        </section>
-        <section data-background="backgrounds/ColoredShapes30.svg">
-          <div class="card-body">
-            <h4 class="card-title text-white">What is the name of the object used for AJAX request?
-            </h4>
-            <p class="card-text">
-            <ol class="small text-white">
-              <li>HttpRequest</li>
-              <li>xmlRequest</li>
-              <li>XMLHTTPRequest</li>
-              <li>Request</li>
-            </ol>
-            </p>
-          </div>
-        </section>
-      </section>
-      <section data-background="backgrounds/ColoredShapes23.svg">
-        <p><cite>
-            Be ahead of the times through endless creativity, inquisitiveness
-            and pursuit of improvement.
-          </cite>
-        <h2>Sakichi Toyoda💬</h2>
-        </p>
-      </section>
-      <section>
-        <section data-background="backgrounds/ColoredShapes0.svg">
-          <h1>Contents📃</h1>
-        </section>
-        <section data-background="backgrounds/ColoredShapes1.svg">
-          <ul>
-            <li>
-              <h2>Essential Knowledge</h2>
-              <ul>
-                <li>APIs and REST APIs</li>
-                <li>HTTP Methods and Status Codes</li>
-              </ul>
-            </li>
-            <li>
-              <h2>Admission</h2>
-              <ul>
-                <li>Building Endpoints in Flask</li>
-                <li>Connecting a Client Application</li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-      </section>
-      <section data-background="backgrounds/ColoredShapes2.svg">
-        <h1>Essential Knowledge 📚</h1>
-      </section>
-      <section>
-        <section data-background="backgrounds/ColoredShapes3.svg">
-          <h1>APIs ⚙</h1>
+      </div>
+      <div class="slides">
+        <section>
+          <section data-background="backgrounds/ColoredShapes3.svg">
+            <h1>APIs and Web APIs ⚙</h1>
+          </section>
+          <section data-background="backgrounds/ColoredShapes9.svg">
+            <h2>What is an API?</h2>
+            <ul>
+              <li>API stands for Application Programming Interface.</li>
+              <li>
+                APIs provide a simple interface (set of available methods) to
+                perform complicated tasks.
+              </li>
+              <li>
+                They make it easy for other applications to use advanced and complex
+                functionality.
+              </li>
+              <li>
+                Examples:
+                <ul>
+                  <li>
+                    NVidia CUDA allows developers to run Python code on GPUs(for
+                    AI, Blockchain ...).
+                  </li>
+                  <li>psycopg2 allows us to develop applications that run database queries on postgresql.</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section data-background="backgrounds/ColoredShapes10.svg">
+            <h2>Why do we need APIs?</h2>
+          </section>
+          <section data-background="backgrounds/ColoredShapes11.svg">
+            Types of APIs
+          </section>
         </section>
 
-        <section data-background="backgrounds/ColoredShapes9.svg">
-          <h2>What is an API?</h2>
-          <ul>
-            <li>API stands for Application Programming Interface.</li>
-            <li>APIs form the foundation of IOT, Mobile Apps and Cloud.</li>
-            <li>
-              APIs provide a simple interface (set of available methods) that
-              allow other software applications to perform complex tasks.
-            </li>
-          </ul>
-        </section>
-
-        <section data-background="backgrounds/ColoredShapes10.svg">
-          <h2>Why do we need APIs?</h2>
-          <ul>
-            <li>They provide a simple interface for other applications.</li>
-            <li>
-              They make it easy for developers to use advanced and complex
-              functionality.
-            </li>
-          </ul>
-        </section>
-        <section data-background="backgrounds/ColoredShapes36.svg">
-          <h2>Examples:</h2>
-          <ul>
-            <li>
-              NVidia CUDA allows Python applications to run Python code on
-              GPUs(for AI, Blockchain ...).
-            </li>
-            <li>
-              Psycopg2 allows Python applications to run SQL queries on
-              PostGreSQL.
-            </li>
-            <li>
-              Web pages can get the GPS location of a device from the browser via a
-              Geolocation API.
-            </li>
-          </ul>
-        </section>
-      </section>
-
-      <section>
-        <section data-background="backgrounds/ColoredShapes11.svg">
-          <h1>REST APIs ⚙</h1>
-        </section>
-        <section data-background="backgrounds/ColoredShapes11.svg">
-          <h2>REST APIs</h2>
-          <ul>
-            <li>
-              An architectural style and guideline that applies to web based
-              APIs.
-            </li>
-            <li>Roy Fielding defined REST in a PhD dissertation in 2000.</li>
-            <li>
-              APIs that fulifill the REST constraints are called RESTful APIs.
-            </li>
-          </ul>
-        </section>
-        <section data-background="backgrounds/ColoredShapes37.svg">
-          <sectio>
-            <h2>REST APIs(Continued)</h2>
-            <li>
-              REST APIs are typically based on HTTP Protocol and HTTP Methods
-              such as GET, POST, DELETE.
-            </li>
-            <li>
-              Their output can be JSON, XML, HTML or BLOB (Binary Large
-              Object).
-              <ul>
-                <li>The typical format in modern REST APIs is JSON.</li>
-              </ul>
-            </li>
-          </sectio>
-        </section>
-        <section data-background="backgrounds/ColoredShapes12.svg">
-          <h2>REST APIs(Continued)</h2>
-          <ul>
-            <li>
-              Creating a REST API involves abstracting away
-              the underlying implementation details (DBMS, Database Structure
-              ...) and presenting an easy to use interface to the client
-              application.
-            </li>
-            <li>
-              A REST API is fairly small server-side application, sometimes
-              implemented as a micro-service.
-            </li>
-            <li>
-              Clients access resources using URIs and send and receive data
-              using a specified format.
-            </li>
-          </ul>
-        </section>
-        <section data-background="backgrounds/ColoredShapes13.svg">
-          <h2>Architectural Constraints</h2>
-          <ul>
-            <li>
-              Client-Server Architecture: REST Architecture enforces a
-              Client-server architecture thereby enforcing separation of
-              concerns between user interface(frontend) and backend.
-            </li>
-            <li>
-              Statelessness: REST Architecture is stateless (it keeps no
-              session information, each request is processed in isolation),
-              thereby eliminating the overhead of maitaining sessions. This
-              also means you can load balance requests between many servers.
-            </li>
-          </ul>
-        </section>
-        <section data-background="backgrounds/ColoredShapes14.svg">
-          <h2>Architectural Constraints</h2>
-          <ul>
-            <li>
-              Cacheability: As a result of the Stateless nature of the REST
-              Architecture Responses can be Cached; another property that
-              supports scalability.
-            </li>
-            <li>
-              Layered: The application architecture is supposed to be layered
-              such that Caching can be done at multiple layers between the
-              server and the client.
-            </li>
-          </ul>
-        </section>
-        <section data-background="backgrounds/ColoredShapes15.svg">
-          <h2>Architectural Constraints</h2>
-          <ul>
-            <li>
-              Uniform interface:
-              <ul>
-                <li>Individual Objects should be identifiable via a URI.</li>
-                <li>
-                  If a client holds the information of an Object, it should be
-                  able to modify or delete the Object.
-                </li>
-                <li>
-                  Responses must include enough information to process the
-                  Response (for example: Content-Type Header).
-                </li>
-                <li>
-                  *** If a client accesses the base URL, the client should be
-                  able to discover all available objects that it needs.
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-        <section data-background="backgrounds/ColoredShapes15.svg">
-          <h2>Architectural Constraints</h2>
-          <ul>
-            <li>
-              *** Code on demand: Client should be able to download some
-              executable code from the server to extend functionality.
-            </li>
-          </ul>
-        </section>
-        <section data-background="backgrounds/ColoredShapes16.svg">
-          <h2>Why do we need REST APIs?</h2>
-          <ul>
-            <li>
-              They allow us to develop scalable APIs from micro-services.
-            </li>
-            <li>
-              This ties in to our goal to create applications that will scale.
-            </li>
-          </ul>
-        </section>
-      </section>
-      <section data-background="backgrounds/ColoredShapes31.svg">
-        <h1>HTTP 🌌</h1>
-      </section>
-      <section>
         <section data-background="backgrounds/ColoredShapes4.svg">
-          <h1>Methods 📨</h1>
+          <h1>HTTP Methods 📨</h1>
         </section>
-        <section data-background="backgrounds/ColoredShapes18.svg">
-          <h2>GET</h2>
-          <p>Used to retrieve an item (with an id/URI) or items (with a URL).</p>
-        </section>
-        <section data-background="backgrounds/ColoredShapes19.svg">
-          <h2>POST</h2>
-          <p>Used to create an item.</p>
-        </section>
-        <section data-background="backgrounds/ColoredShapes20.svg">
-          <h2>PUT</h2>
-          <p>Used to modify by replacing/overwriting all properties of an item.</p>
-        </section>
-        <section data-background="backgrounds/ColoredShapes21.svg">
-          <h2>PATCH</h2>
-          <p>Used to modify by changing a subset of properties.</p>
-        </section>
-        <section data-background="backgrounds/ColoredShapes22.svg">
-          <h2>OPTIONS</h2>
-          <p>Used to specify allowed methods (especially for crossorigin requests).</p>
-        </section>
-      </section>
-      <section>
         <section data-background="backgrounds/ColoredShapes5.svg">
-          <h1>Status Codes 🚦</h1>
+          <h1>HTTP Status Codes 🚦</h1>
         </section>
-        <section data-background="backgrounds/ColoredShapes32.svg">
-          <h2>Success Responses</h2>
-          <table class="table text-white">
-            <thead>
-              <tr>
-                <th>Code</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>200</td>
-                <td>The request succeeded.</td>
-              </tr>
-              <tr>
-                <td>201</td>
-                <td>The request succeeded, and a new resource was created as a result.</td>
-              </tr>
-              <tr>
-                <td>202</td>
-                <td>The request has been received but not yet acted upon. In this case, there will never be a final
-                  result code.</td>
-              </tr>
-            </tbody>
-          </table>
+        <section>
+          <section data-background="backgrounds/ColoredShapes6.svg">
+            <h1>Questions? 💬</h1>
+          </section>
         </section>
-        <section data-background="backgrounds/ColoredShapes33.svg">
-          <h2>Redirection Responses</h2>
-          <table class="table text-white">
-            <thead>
-              <tr>
-                <th>Code</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>301</td>
-                <td>The URL of the requested resource has been changed permanently. The new URL is given in the
-                  response.</td>
-              </tr>
-              <tr>
-                <td>304</td>
-                <td>This is used for caching purposes. It tells the client that the resource has not been modified thus
-                  it can use a cached version.</td>
-              </tr>
-            </tbody>
-          </table>
+        <section>
+          <section data-background="backgrounds/ColoredShapes7.svg">
+            <h1>Feedback? 🖋</h1>
+          </section>
         </section>
-        <section data-background="backgrounds/ColoredShapes34.svg">
-          <h2>Client Error Responses</h2>
-          <table class="table text-white">
-            <thead>
-              <tr>
-                <th>Code</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>400</td>
-                <td>The server detected a malformed request syntax, invalid request message framing...</td>
-              </tr>
-              <tr>
-                <td>401</td>
-                <td>The client must authenticate itself first to get the requested response.</td>
-              </tr>
-              <tr>
-                <td>403</td>
-                <td>The client does not have access rights to the content.</td>
-              </tr>
-              <tr>
-                <td>404</td>
-                <td>The server can not find the requested resource.</td>
-              </tr>
-            </tbody>
-          </table>
+        <section>
+          <section data-background="backgrounds/ColoredShapes8.svg">
+            <h1>The End 🏁</h1>
+          </section>
         </section>
-        <section data-background="backgrounds/ColoredShapes35.svg">
-          <h2>Server Error Responses</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Code</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>500</td>
-                <td>The server has encountered a situation it does not know how to handle.</td>
-              </tr>
-              <tr>
-                <td>503</td>
-                <td>The server is not ready to handle the request. Common causes are a server that is down for
-                  maintenance or that is overloaded.</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-      </section>
-      <section>
-        <section data-background="backgrounds/ColoredShapes6.svg">
-          <h1>Questions? 💬</h1>
-        </section>
-      </section>
-      <section>
-        <section data-background="backgrounds/ColoredShapes7.svg">
-          <h1>Feedback? 🖋</h1>
-        </section>
-      </section>
-      <section>
-        <section data-background="backgrounds/ColoredShapes8.svg">
-          <h1>The End 🏁</h1>
-        </section>
-      </section>
+      </div>
     </div>
-  </div>
 
-  <script src="dist/reveal.js"></script>
-  <script src="plugin/notes/notes.js"></script>
-  <script src="plugin/markdown/markdown.js"></script>
-  <script src="plugin/highlight/highlight.js"></script>
-  <script>
-    // More info about initialization & config:
-    // - https://revealjs.com/initialization/
-    // - https://revealjs.com/config/
-    Reveal.initialize({
-      hash: true,
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
 
-      // Learn about plugins: https://revealjs.com/plugins/
-      plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
-    });
-  </script>
-</body>
-
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
